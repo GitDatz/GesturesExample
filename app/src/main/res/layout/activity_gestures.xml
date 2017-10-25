@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vdthai.gesturesexample.GesturesActivity">
+
+    <TextView
+        android:id="@+id/gestureText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gestureStrokeType="multiple">
+    </android.gesture.GestureOverlayView>
+
+</android.support.constraint.ConstraintLayout>
